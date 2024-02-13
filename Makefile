@@ -4,7 +4,7 @@ D2J=0d/das2json/das2json
 
 run: delay0d transpile.drawio.json
 	@echo
-	./delay0d main delay0d.drawio $(LIBSRC)/transpile.drawio
+	./delay0d 'hello from delay example' main delay0d.drawio $(LIBSRC)/transpile.drawio
 
 delay0d: delay0d.drawio.json
 	odin build . $(ODIN_FLAGS)
